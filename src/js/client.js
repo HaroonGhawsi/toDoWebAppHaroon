@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
 import Home from "./pages/Home.js";
@@ -15,10 +16,11 @@ ReactDOM.render(
         <Route path="/" component={Home}>
             <IndexRoute component={Home}></IndexRoute>
             
+            <Route path="home(/:home)" name="home" component={TodoApp}></Route>
             <Route path="about(/:about)" name="about" component={About}></Route>
             <Route path="view(/:view)" name="view" component={View}></Route>
             <Route path="help(/:help)" name="help" component={Help}></Route>
-            <Route path="home(/:home)" name="home" component={TodoApp}></Route>
+            
         
         </Route>
     </Router>,app);
