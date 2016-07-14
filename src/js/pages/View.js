@@ -62,14 +62,14 @@ var View = React.createClass({
             <div>
                 <h1>View Tasks as per the Scheduler</h1>
                         <div class="btn-group btn-group-justified">
-                            <div class="btn btn-default" onClick={() => this.onClickView('d')}>Daily Tasks</div>
-                            <div class="btn btn-default" onClick={() => this.onClickView('w')}>Weekly Tasks</div>
-                            <div class="btn btn-default" onClick={() => this.onClickView('m')}>Monthly Tasks</div>
-                            <div class="btn btn-default" onClick={() => this.onClickView('y')}>Yearly Tasks</div>                   
+                            <div class="btn btn-default" onClick={() => this.onClickView('d')}>Täglich</div>
+                            <div class="btn btn-default" onClick={() => this.onClickView('w')}>Wöchentlich</div>
+                            <div class="btn btn-default" onClick={() => this.onClickView('m')}>Monatlich</div>
+                            <div class="btn btn-default" onClick={() => this.onClickView('y')}>jährlich</div>                   
                         </div>
                     <br />
                         <div class="jumbotron">
-                                <h1>List of Tasks</h1>
+                                <h1>Aufgabenliste</h1>
                                 {list}
                         </div>
             </div>
