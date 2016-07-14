@@ -62,18 +62,20 @@ var TodoApp = React.createClass({
             <div>
                 <h1>Welcome to To Do Web Application!</h1>
                 <h3>Please add Tasks below</h3>
+
                  <select onChange={this.onChangeSelection} value={this.value}>
-                    <option value="T">Select Task Type</option>
-                    <option value="d">Daily</option>
-                    <option value="w">Weekly</option>
-                    <option value="m">Monthly</option>
-                    <option value="y">Yearly</option>
+                    <option value="T">Aufgabenplaner</option>
+                    <option value="d">pro Tag</option>
+                    <option value="w">pro Woche</option>
+                    <option value="m">pro monat</option>
+                    <option value="y">pro Jahr</option>
                 </select>
                     <TodoList items={this.state.items} />
                     <input class="form-control" id="inputDefault" type="text" onChange={this.onChange} value={this.state.text}/>      
                     <button class="btn btn-success" onClick={this.handleSubmit}>{'Add'}</button>
                     <button class="btn btn-danger" onClick={this.onClickItems}>{'Remove'}</button>
             </div>
+            
         )
     }
 });
