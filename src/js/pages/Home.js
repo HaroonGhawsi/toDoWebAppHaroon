@@ -11,7 +11,7 @@ export default class Home extends React.Component{
         const containerStyle = {
             marginTop: "60px"
         };
-        console.log("Home");
+        //console.log("Home");
         return(
         <div>
             <Nav location={locations} />
